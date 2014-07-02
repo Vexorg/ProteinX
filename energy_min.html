@@ -1,0 +1,112 @@
+<html>
+<head>
+<style type="text/css">
+BODY
+{
+    FONT: 16px times,sans-serif;
+    COLOR: #ffffff;
+    BACKGROUND-COLOR: #545E6E
+}
+TD
+{
+    FONT: 16px times,sans-serif;
+    COLOR: #ffffff
+}
+.heading
+{
+    FONT: 20px arial,sans-serif;
+    FONT-WEIGHT: bold;
+    COLOR: #E0E5ED
+}
+A
+{
+    TEXT-DECORATION: none
+}
+A
+{
+    COLOR: #545E6E
+}
+A.test
+{
+    TEXT-DECORATION: underline;
+    COLOR: #CED9EA
+}
+A.test:hover
+{
+    COLOR: #ffffff
+}
+</style>
+</head>
+<body>
+<table border="0" width="700" cellpadding="5">
+	<tr><td>
+		<span class="heading">Mutation and Energy Minimization Tutorial</span>
+	</td></tr>
+</table>
+
+<table border="0" width="700" cellpadding="5">
+	<tr><td>
+		Open the 1DN2 protein located in the "Protein Data Files" directory in the ProteinX folder (Arrow #1).  You can select an amino acid by doubling clicking any atom, or you can select from the amino acid list from the protein panel on the right side (Arrow #3).<br><br>
+	</td></tr>
+	
+	<tr><td>
+		<img border="0" src="images/energy_min1.jpg" alt="A Protein">
+	</td></tr>
+
+	<tr><td>
+		Select chain B from the "Protein chains" pull down menu (Arrow #2), and then select "TYR349" (Arrow #3) from the "Protein amino acids" list (List is sorted by increasing number).  The camera will automatically focus on the selected amino acid residue, along with highlighting the residue in green as shown above.  We will now mutate the selected amino acid residue by clicking the Mutate button on the top of the screen (Arrow #4).<br><br>
+	</td></tr>
+
+	<tr><td>
+		<img border="0" src="images/energy_min2.jpg" alt="A Protein">
+	</td></tr>
+
+	<tr><td>
+		A button for all 20 amino acids will appear (as shown in the above picture), and a mutation is as simple as picking the amino acid you want to mutate to.  For this example, ARG was chosen.<br><br>
+	</td></tr>
+
+	<tr><td>
+		<img border="0" src="images/energy_min3.jpg" alt="A Protein">
+	</td></tr>
+
+	<tr><td>
+		The above picture shows the mutated amino acid in its unminimized state.  The placement has some of the atoms too close to other amino acids, making the force-field energy extremely high (41547084 energy as shown by the lower arrow).  There are no "best guess" algorithms used for placement of the side chain of the new mutated amino acid, all the work is done by the energy minimization algorithm instead.  So after any mutation, you need to run energy minimization to find the optimial structure with the lowest energy.  Press the Energy Min button on the top of the screen to begin (upper arrow in above picture).<br><br>
+	</td></tr>
+
+	<tr><td>
+		<img border="0" src="images/energy_min4.jpg" alt="A Protein">
+	</td></tr>
+
+	<tr><td>
+		ProteinX uses simulated annealing to perform energy minimization, allowing it to avoid becoming stuck at local minima, a problem common with other energy minimization algorithms.  Since simulated annealing depends on the rate the system is cooled, there are options available to the user to adjust the cooling rates.  This is just a basic tutorial, so the default settings will be used.  Press the Start button to begin minimization.<br><br>
+	</td></tr>
+
+	<tr><td>
+		<img border="0" src="images/energy_min5.jpg" alt="A Protein">
+	</td></tr>
+
+	<tr><td>
+		ProteinX is able to minimize an amino acid residue within a few seconds, compared to minutes by other energy minimization viewers such as DeepView, thanks to the simulated annealing method developed for ProteinX.  ProteinX is also the only molecular viewer that shows the energy minimization process in real-time, as they shift into their lower energy states.  There is a slow motion mode in the energy minimization settings (the "Visual delay" option) that slows this process down so the viewer can watch the transformation in detail. When the energy minimization process finishes, it will show the old position in green, and highlight the new position in red.  The "Total Energy" of the protein displayed at the bottom left of the screen will also be updated to show how much the protein's energy changed due to the mutation.<br><br>
+	</td></tr>
+
+
+	<tr><td>
+		<img border="0" src="images/energy_min6.jpg" alt="A Protein">
+	</td></tr>
+
+	<tr><td>
+		The above picture shows our final result.<br><br>
+	</td></tr>
+		
+	<tr><td>
+		<img border="0" src="images/energy_min7.jpg" alt="A Protein">
+	</td></tr>
+
+	<tr><td>
+		If you want to concentrate on the mutated amino acid without being distracted by distance atoms, select the "Isolate" checkbox, which will remove atoms that are further then 10 Angstroms away from the selected amino acid (as shown in the above picture).  Other helpful features are the "Highlight chains" checkbox to color code each chain for the protein, and the "Show backbone" checkbox that will hide all the amino acid side chains and just reveal the secondary structure of the protein.  All three checkboxes can also all be enabled at once.<br><br>(Screenshots taken from a three year old AMD XP 2600+ with a two year old Geforce 6800 GT, a low cost computer for today's standard, yet able to run at 100 frames per second as indicated in the lower right corner of each screenshot)<br>
+	</td></tr>		
+			
+</table>
+
+</body>
+</html>

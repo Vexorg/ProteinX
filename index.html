@@ -1,70 +1,186 @@
-<!doctype html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Proteinx by Vexorg</title>
+<head>
+<style type="text/css">
+BODY
+{
+    FONT: 16px times,sans-serif;
+    COLOR: #ffffff;
+    BACKGROUND-COLOR: #545E6E
+}
+TD
+{
+    FONT: 16px times,sans-serif;
+    COLOR: #ffffff
+}
+.heading
+{
+    FONT: 20px arial,sans-serif;
+    FONT-WEIGHT: bold;
+    COLOR: #E0E5ED
+}
+A
+{
+    TEXT-DECORATION: none
+}
+A
+{
+    COLOR: #545E6E
+}
+A.test
+{
+    TEXT-DECORATION: underline;
+    COLOR: #CED9EA
+}
+A.test:hover
+{
+    COLOR: #ffffff
+}
+</style>
+</head>
+<body>
+<table border="0" width="700" cellpadding="5">
+	<tr><td>
+		<span class="heading">ProteinX</span>
+	</td></tr>
+	<tr><td>
+		ProteinX is a molecular viewer that specializes in protein <a class="test" href="http://en.wikipedia.org/wiki/Mutation">mutations</a> and <a class="test" href="http://en.wikipedia.org/wiki/Molecular_modelling">energy minimization</a> of these mutations to find the lowest potential energy state to stabilize the protein's structure.  It is the first freely available tool that offers high resolution 3D images in real-time, and uses simulated annealing to perform energy minimization on amino acid residues within seconds, instead of minutes like with other tools.<br>
+	</td></tr>
+</table>
 
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <script src="javascripts/scale.fix.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<table border="0" width="700" cellpadding="5">
+	<tr><td>
+		<span class="heading">Download</span>
+	</td></tr>
+	<tr><td>
+		Version 0.91 of ProteinX has been released. <a class="test" href="http://www.drof-rekindled.com/proteinx/ProteinX_091.zip">Download from here.</a><br>
+		ProteinX requires Windows, <a class="test" href="http://www.microsoft.com/directx">DirectX</a> 9.0c, and a 3D video card (Either a Geforce FX/6/7 series or a Radeon 9500-9800/X1800 or newer).  Please read the Readme.txt included in the zip for more details and instructions on how to run ProteinX.<br>
+	</td></tr>
+</table>
 
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-  </head>
-  <body>
-    <div class="wrapper">
-      <header class="without-description">
-        <h1>Proteinx</h1>
-        <p></p>
-        <p class="view"><a href="https://github.com/Vexorg/ProteinX">View the Project on GitHub <small>Vexorg/ProteinX</small></a></p>
-        <ul>
-          <li><a href="https://github.com/Vexorg/ProteinX/zipball/master">Download <strong>ZIP File</strong></a></li>
-          <li><a href="https://github.com/Vexorg/ProteinX/tarball/master">Download <strong>TAR Ball</strong></a></li>
-          <li><a href="https://github.com/Vexorg/ProteinX">View On <strong>GitHub</strong></a></li>
-        </ul>
-      </header>
-      <section>
-        <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
+<table border="0" width="700" cellpadding="5">
+	<tr><td>
+		<span class="heading">Tutorials</span>
+	</td></tr>
+	<tr><td>
+		ProteinX uses a simple interface for a complex process, making it easy even for a novice user to learn how to use a molecular viewer.  Here is a tutorial and a video to show what ProteinX can do, along with screenshots for each step:
+		<ul>
+		<li>
+		<a class="test" href="energy_min.html">Mutation and Energy Minimization Tutorial</a>
+		<li>
+		<a class="test" href="http://students.cecs.csulb.edu/~jtlevine/thesis/ProteinX.mpg">A short video showing ProteinX in action</a>
+		</ul>		
+ 	</td></tr>
+</table>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+<table border="0" width="700" cellpadding="5">
+	<tr><td>
+		<span class="heading">Gallery</span> (click on an image to enlarge)
+	</td></tr>
+</table>
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
+<table border="0" width="700" cellpadding="5">
+	<tr><td>
+		<a href="images/proteinx01.jpg">
+		<img border="0" src="thumbnails/proteinx01_s.jpg" alt="A Protein">
+		</a> 
+	</td>
+	<td align="left">
+		Protein 1DN2 with the organic shader and depth of field turned on, colored by chain.  Atom size is set to large, and glow setting is at max.
+	</td>
+	</tr>
+	<tr><td>
+		<a href="images/proteinx02.jpg">
+		<img border="0" src="thumbnails/proteinx02_s.jpg" alt="A Protein">
+		</a> 
+	</td>
+	<td align="left">
+		Protein 1AON with the toon shader set to five shades, mode 1, colored by chain.  Atom size is set to large, and there are 58,688 atoms that make up this protein.
+	</td>
+	</tr>
+	<tr><td>
+		<a href="images/proteinx03.jpg">
+		<img border="0" src="thumbnails/proteinx03_s.jpg" alt="A Protein">
+		</a> 
+	</td>
+	<td align="left">
+		Protein 1CD3 with the organic shader and depth of field turned on.  Atom size is small, with glow set to max.
+	</td>
+	</tr>
+	<tr><td>
+		<a href="images/proteinx04.png">
+		<img border="0" src="thumbnails/proteinx04_s.jpg" alt="A Protein">
+		</a> 
+	</td>
+	<td align="left">
+		Protein 1CD3 with the Cook-Torrance shader on mode 2.  Atom size is normal.
+	</td>
+	</tr>
+	<tr><td>
+		<a href="images/proteinx05.jpg">
+		<img border="0" src="thumbnails/proteinx05_s.jpg" alt="A Protein">
+		</a> 
+	</td>
+	<td align="left">
+		Protein 1D66 with the organic shader and depth of field turned on.  Atom size is large, with glow set to max.
+	</td>
+	</tr>
+	<tr><td>
+		<a href="images/proteinx06.jpg">
+		<img border="0" src="thumbnails/proteinx06_s.jpg" alt="A Protein">
+		</a> 
+	</td>
+	<td align="left">
+		Unknown protein (protein was deleted after this screenshot was taken) with the toon shader set to five shades, using mode 1, colored by chain.  Atom size is large.
+	</td>
+	</tr>
+	<tr><td>
+		<a href="images/proteinx07.jpg">
+		<img border="0" src="thumbnails/proteinx07_s.jpg" alt="A Protein">
+		</a> 
+	</td>
+	<td align="left">
+		Center of protein 1F8R with the organic shader and depth of field turned on, colored by chain.  Atom size is large, with glow set to medium.
+	</td>
+	</tr>
+	<tr><td>
+		<a href="images/proteinx08.png">
+		<img border="0" src="thumbnails/proteinx08_s.jpg" alt="A Protein">
+		</a> 
+	</td>
+	<td align="left">
+		Protein 1HSA with the energy field shader, colored by chain.  Atom size is normal.
+	</td>
+	</tr>
+	<tr><td>
+		<a href="images/proteinx09.jpg">
+		<img border="0" src="thumbnails/proteinx09_s.jpg" alt="A Protein">
+		</a> 
+	</td>
+	<td align="left">
+		Protein 1AON with the organic shader and depth of field turned on, colored by chain.  Atom size is set to large, and glow setting is at max.
+	</td>
+	</tr>
+	<tr><td>
+		<a href="images/proteinx10.jpg">
+		<img border="0" src="thumbnails/proteinx10_s.jpg" alt="A Protein">
+		</a> 
+	</td>
+	<td align="left">
+		Protein 1DN2 with the Cook-Torrance shader on mode 2, colored by chain.  Atom size is medium.
+	</td>
+	</tr>
+	<tr><td>
+		<a href="images/proteinx11.png">
+		<img border="0" src="thumbnails/proteinx11_s.jpg" alt="A Protein">
+		</a> 
+	</td>
+	<td align="left">
+		Protein 1DN2 with the organic shader and depth of field turned off, colored by chain.  Atom size is set to small, and glow setting is at max.
+	</td>
+	</tr>
+</table>
 
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
 
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
 
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
-
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
-    </div>
-    <footer>
-      <p>Project maintained by <a href="https://github.com/Vexorg">Vexorg</a></p>
-      <p>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></p>
-    </footer>
-    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
-    
-  </body>
+</body>
 </html>
